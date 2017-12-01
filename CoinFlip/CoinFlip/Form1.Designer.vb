@@ -22,8 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnCoinFlip = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.picTails = New System.Windows.Forms.PictureBox()
         Me.picHeads = New System.Windows.Forms.PictureBox()
         Me.lblHeadScore = New System.Windows.Forms.Label()
@@ -32,23 +32,23 @@ Partial Class Form1
         CType(Me.picHeads, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnCoinFlip
         '
-        Me.Button1.Location = New System.Drawing.Point(35, 212)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(84, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Toss the Coin"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCoinFlip.Location = New System.Drawing.Point(35, 212)
+        Me.btnCoinFlip.Name = "btnCoinFlip"
+        Me.btnCoinFlip.Size = New System.Drawing.Size(84, 23)
+        Me.btnCoinFlip.TabIndex = 0
+        Me.btnCoinFlip.Text = "Toss the Coin"
+        Me.btnCoinFlip.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnExit
         '
-        Me.Button2.Location = New System.Drawing.Point(145, 212)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(97, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Exit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(145, 212)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(97, 23)
+        Me.btnExit.TabIndex = 1
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'picTails
         '
@@ -95,8 +95,8 @@ Partial Class Form1
         Me.Controls.Add(Me.lblHeadScore)
         Me.Controls.Add(Me.picTails)
         Me.Controls.Add(Me.picHeads)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnCoinFlip)
         Me.Name = "Form1"
         Me.Text = "Coin Toss"
         CType(Me.picTails, System.ComponentModel.ISupportInitialize).EndInit()
@@ -104,8 +104,8 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnCoinFlip As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents picHeads As System.Windows.Forms.PictureBox
     Friend WithEvents picTails As System.Windows.Forms.PictureBox
     Friend WithEvents lblHeadScore As System.Windows.Forms.Label
