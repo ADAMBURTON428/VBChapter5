@@ -22,35 +22,17 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.picLightOff = New System.Windows.Forms.PictureBox()
-        Me.picLightOn = New System.Windows.Forms.PictureBox()
         Me.btnLightSwitch = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblTimes = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.picBroken = New System.Windows.Forms.PictureBox()
+        Me.picLightOff = New System.Windows.Forms.PictureBox()
+        Me.picLightOn = New System.Windows.Forms.PictureBox()
+        CType(Me.picBroken, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLightOff, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLightOn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'picLightOff
-        '
-        Me.picLightOff.Image = Global.LightOnLightOff.My.Resources.Resources.lights_off
-        Me.picLightOff.Location = New System.Drawing.Point(289, 35)
-        Me.picLightOff.Name = "picLightOff"
-        Me.picLightOff.Size = New System.Drawing.Size(142, 118)
-        Me.picLightOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picLightOff.TabIndex = 1
-        Me.picLightOff.TabStop = False
-        '
-        'picLightOn
-        '
-        Me.picLightOn.Image = Global.LightOnLightOff.My.Resources.Resources.lights_on
-        Me.picLightOn.Location = New System.Drawing.Point(72, 35)
-        Me.picLightOn.Name = "picLightOn"
-        Me.picLightOn.Size = New System.Drawing.Size(100, 118)
-        Me.picLightOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picLightOn.TabIndex = 0
-        Me.picLightOn.TabStop = False
         '
         'btnLightSwitch
         '
@@ -87,11 +69,43 @@ Partial Class Form1
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "How many time you turn on the light."
         '
+        'picBroken
+        '
+        Me.picBroken.Image = Global.LightOnLightOff.My.Resources.Resources.broken_light
+        Me.picBroken.Location = New System.Drawing.Point(72, 35)
+        Me.picBroken.Name = "picBroken"
+        Me.picBroken.Size = New System.Drawing.Size(367, 160)
+        Me.picBroken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBroken.TabIndex = 6
+        Me.picBroken.TabStop = False
+        Me.picBroken.Visible = False
+        '
+        'picLightOff
+        '
+        Me.picLightOff.Image = Global.LightOnLightOff.My.Resources.Resources.lights_off
+        Me.picLightOff.Location = New System.Drawing.Point(289, 35)
+        Me.picLightOff.Name = "picLightOff"
+        Me.picLightOff.Size = New System.Drawing.Size(142, 118)
+        Me.picLightOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picLightOff.TabIndex = 1
+        Me.picLightOff.TabStop = False
+        '
+        'picLightOn
+        '
+        Me.picLightOn.Image = Global.LightOnLightOff.My.Resources.Resources.lights_on
+        Me.picLightOn.Location = New System.Drawing.Point(72, 35)
+        Me.picLightOn.Name = "picLightOn"
+        Me.picLightOn.Size = New System.Drawing.Size(100, 118)
+        Me.picLightOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picLightOn.TabIndex = 0
+        Me.picLightOn.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(498, 325)
+        Me.Controls.Add(Me.picBroken)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblTimes)
         Me.Controls.Add(Me.btnExit)
@@ -100,6 +114,7 @@ Partial Class Form1
         Me.Controls.Add(Me.picLightOn)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.picBroken, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLightOff, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLightOn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -112,5 +127,6 @@ Partial Class Form1
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents lblTimes As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents picBroken As System.Windows.Forms.PictureBox
 
 End Class

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A44C7451-15F8-41FD-BB35-B79D346A8144}</ProjectGuid>
+    <ProjectGuid>{1191E46B-3060-4CE5-9A8A-4CFC6C55E93D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>LightOnLightOff.My.MyApplication</StartupObject>
-    <RootNamespace>LightOnLightOff</RootNamespace>
-    <AssemblyName>LightOnLightOff</AssemblyName>
+    <StartupObject>Race.My.MyApplication</StartupObject>
+    <RootNamespace>Race</RootNamespace>
+    <AssemblyName>Race</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>LightOnLightOff.xml</DocumentationFile>
+    <DocumentationFile>Race.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>LightOnLightOff.xml</DocumentationFile>
+    <DocumentationFile>Race.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -117,13 +117,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lights on.jpg" />
+    <None Include="Resources\finishline.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lights off.jpg" />
+    <None Include="Resources\runner 1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\broken light.jpg" />
+    <None Include="Resources\guy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\runner 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on track.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

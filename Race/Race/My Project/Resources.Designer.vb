@@ -39,7 +39,7 @@ Namespace My.Resources
         Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
-                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("LightOnLightOff.Resources", GetType(Resources).Assembly)
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Race.Resources", GetType(Resources).Assembly)
                     resourceMan = temp
                 End If
                 Return resourceMan
@@ -63,9 +63,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property broken_light() As System.Drawing.Bitmap
+        Friend ReadOnly Property finishline() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("broken light", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("finishline", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -73,9 +73,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property lights_off() As System.Drawing.Bitmap
+        Friend ReadOnly Property guy() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("lights off", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("guy", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -83,9 +83,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property lights_on() As System.Drawing.Bitmap
+        Friend ReadOnly Property on_track() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("lights on", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("on track", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property runner_1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("runner 1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property runner_3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("runner 3", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
