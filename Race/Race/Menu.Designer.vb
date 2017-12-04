@@ -23,7 +23,6 @@ Partial Class Menu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnRace = New System.Windows.Forms.Button()
-        Me.btnCoin = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnRace
@@ -35,21 +34,11 @@ Partial Class Menu
         Me.btnRace.Text = "Race"
         Me.btnRace.UseVisualStyleBackColor = True
         '
-        'btnCoin
-        '
-        Me.btnCoin.Location = New System.Drawing.Point(63, 88)
-        Me.btnCoin.Name = "btnCoin"
-        Me.btnCoin.Size = New System.Drawing.Size(75, 23)
-        Me.btnCoin.TabIndex = 1
-        Me.btnCoin.Text = "Coin filp"
-        Me.btnCoin.UseVisualStyleBackColor = True
-        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.btnCoin)
         Me.Controls.Add(Me.btnRace)
         Me.Name = "Menu"
         Me.Text = "Menu"
@@ -57,5 +46,4 @@ Partial Class Menu
 
     End Sub
     Friend WithEvents btnRace As System.Windows.Forms.Button
-    Friend WithEvents btnCoin As System.Windows.Forms.Button
 End Class
