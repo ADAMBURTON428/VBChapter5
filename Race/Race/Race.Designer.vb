@@ -25,16 +25,17 @@ Partial Class Race
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.picBillNye = New System.Windows.Forms.PictureBox()
         Me.picRunnerGuy = New System.Windows.Forms.PictureBox()
-        Me.picoldrunner = New System.Windows.Forms.PictureBox()
+        Me.picOldrunner = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
+        Me.lblWinner = New System.Windows.Forms.Label()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBillNye, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRunnerGuy, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picoldrunner, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picOldrunner, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -69,15 +70,15 @@ Partial Class Race
         Me.picRunnerGuy.TabIndex = 3
         Me.picRunnerGuy.TabStop = False
         '
-        'picoldrunner
+        'picOldrunner
         '
-        Me.picoldrunner.Image = Global.Race.My.Resources.Resources.runner_1
-        Me.picoldrunner.Location = New System.Drawing.Point(2, 29)
-        Me.picoldrunner.Name = "picoldrunner"
-        Me.picoldrunner.Size = New System.Drawing.Size(111, 117)
-        Me.picoldrunner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picoldrunner.TabIndex = 2
-        Me.picoldrunner.TabStop = False
+        Me.picOldrunner.Image = Global.Race.My.Resources.Resources.runner_1
+        Me.picOldrunner.Location = New System.Drawing.Point(2, 29)
+        Me.picOldrunner.Name = "picOldrunner"
+        Me.picOldrunner.Size = New System.Drawing.Size(111, 117)
+        Me.picOldrunner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picOldrunner.TabIndex = 2
+        Me.picOldrunner.TabStop = False
         '
         'PictureBox2
         '
@@ -101,7 +102,7 @@ Partial Class Race
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(90, 422)
+        Me.btnStart.Location = New System.Drawing.Point(557, 422)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(107, 23)
         Me.btnStart.TabIndex = 6
@@ -110,7 +111,7 @@ Partial Class Race
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(683, 422)
+        Me.btnExit.Location = New System.Drawing.Point(784, 422)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 7
@@ -119,24 +120,34 @@ Partial Class Race
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(388, 422)
+        Me.btnReset.Location = New System.Drawing.Point(687, 422)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(75, 23)
         Me.btnReset.TabIndex = 8
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
         '
+        'lblWinner
+        '
+        Me.lblWinner.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWinner.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWinner.Location = New System.Drawing.Point(231, 404)
+        Me.lblWinner.Name = "lblWinner"
+        Me.lblWinner.Size = New System.Drawing.Size(191, 44)
+        Me.lblWinner.TabIndex = 9
+        '
         'Race
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(871, 457)
+        Me.Controls.Add(Me.lblWinner)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.picBillNye)
         Me.Controls.Add(Me.picRunnerGuy)
-        Me.Controls.Add(Me.picoldrunner)
+        Me.Controls.Add(Me.picOldrunner)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox6)
@@ -145,7 +156,7 @@ Partial Class Race
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBillNye, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picRunnerGuy, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picoldrunner, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picOldrunner, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -153,12 +164,13 @@ Partial Class Race
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents picoldrunner As System.Windows.Forms.PictureBox
+    Friend WithEvents picOldrunner As System.Windows.Forms.PictureBox
     Friend WithEvents picRunnerGuy As System.Windows.Forms.PictureBox
     Friend WithEvents picBillNye As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents btnStart As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnReset As System.Windows.Forms.Button
+    Friend WithEvents lblWinner As System.Windows.Forms.Label
 
 End Class

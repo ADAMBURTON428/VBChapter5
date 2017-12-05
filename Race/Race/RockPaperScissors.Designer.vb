@@ -58,9 +58,9 @@ Partial Class RockPaperScissors
         'lblResult
         '
         Me.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblResult.Location = New System.Drawing.Point(227, 52)
+        Me.lblResult.Location = New System.Drawing.Point(222, 78)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(133, 23)
+        Me.lblResult.Size = New System.Drawing.Size(92, 57)
         Me.lblResult.TabIndex = 3
         '
         'RockPaperScissors
