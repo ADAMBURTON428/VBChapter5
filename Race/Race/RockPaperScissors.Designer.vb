@@ -26,6 +26,9 @@ Partial Class RockPaperScissors
         Me.btnPaper = New System.Windows.Forms.Button()
         Me.btnRock = New System.Windows.Forms.Button()
         Me.lblResult = New System.Windows.Forms.Label()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblWins = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnScissors
@@ -63,11 +66,40 @@ Partial Class RockPaperScissors
         Me.lblResult.Size = New System.Drawing.Size(92, 57)
         Me.lblResult.TabIndex = 3
         '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(233, 213)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 4
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'lblWins
+        '
+        Me.lblWins.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWins.Location = New System.Drawing.Point(95, 213)
+        Me.lblWins.Name = "lblWins"
+        Me.lblWins.Size = New System.Drawing.Size(100, 23)
+        Me.lblWins.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(49, 222)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(31, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Wins"
+        '
         'RockPaperScissors
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(372, 262)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblWins)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.btnRock)
         Me.Controls.Add(Me.btnPaper)
@@ -75,10 +107,14 @@ Partial Class RockPaperScissors
         Me.Name = "RockPaperScissors"
         Me.Text = "RockPaperScissors"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnScissors As System.Windows.Forms.Button
     Friend WithEvents btnPaper As System.Windows.Forms.Button
     Friend WithEvents btnRock As System.Windows.Forms.Button
     Friend WithEvents lblResult As System.Windows.Forms.Label
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents lblWins As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
