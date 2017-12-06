@@ -9,4 +9,9 @@
         Dim box = New RockPaperScissors()
         box.Show()
     End Sub
+
+    Private Sub btnSum_Click(sender As Object, e As EventArgs) Handles btnSum.Click
+        Dim box = New SumNumbers()
+        box.Show()
+    End Sub
 End Class
