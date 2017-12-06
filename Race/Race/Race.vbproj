@@ -104,6 +104,12 @@
     <Compile Include="RockPaperScissors.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SumNumbers.Designer.vb">
+      <DependentUpon>SumNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SumNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Menu.resx">
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RockPaperScissors.resx">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SumNumbers.resx">
+      <DependentUpon>SumNumbers.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

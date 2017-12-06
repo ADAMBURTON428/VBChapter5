@@ -1,16 +1,16 @@
 ﻿Public Class SumNumbers
 
    
-    Private Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
-        Dim inttwice As Integer
-        Dim intNumber1 As Integer
-        Dim intNumber2 As Integer
+    Private Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click 
         Dim intSum As Integer
-        Do Until inttwice = 2
-            InputBox("enter a positive integer value.")
-            inttwice += 1
-        Loop
-        intSum = intNumber1 + intNumber2
+        Dim input As Integer
+
+        input = InputBox("Enter a positive integer value.")
+        For i As Integer = 0 To input
+            intSum += i
+        Next
+
+        MessageBox.Show("The sum of the numbers " & input & " is " & intSum)
 
 
     End Sub
