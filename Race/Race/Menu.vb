@@ -19,4 +19,10 @@
         Dim box = New DistanceCalculator()
         box.Show()
     End Sub
+
+  
+    Private Sub btnRandom_Click(sender As Object, e As EventArgs) Handles btnRandom.Click
+        Dim box = New RandomNumber()
+        box.Show()
+    End Sub
 End Class
