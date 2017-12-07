@@ -26,20 +26,22 @@ Partial Class Menu
         Me.btnRockPaperScissors = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnSum = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnDistance = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnRace
         '
-        Me.btnRace.Location = New System.Drawing.Point(63, 54)
+        Me.btnRace.Location = New System.Drawing.Point(90, 96)
         Me.btnRace.Name = "btnRace"
-        Me.btnRace.Size = New System.Drawing.Size(75, 23)
+        Me.btnRace.Size = New System.Drawing.Size(75, 37)
         Me.btnRace.TabIndex = 0
         Me.btnRace.Text = "Race"
         Me.btnRace.UseVisualStyleBackColor = True
         '
         'btnRockPaperScissors
         '
-        Me.btnRockPaperScissors.Location = New System.Drawing.Point(63, 83)
+        Me.btnRockPaperScissors.Location = New System.Drawing.Point(90, 139)
         Me.btnRockPaperScissors.Name = "btnRockPaperScissors"
         Me.btnRockPaperScissors.Size = New System.Drawing.Size(75, 41)
         Me.btnRockPaperScissors.TabIndex = 1
@@ -48,7 +50,7 @@ Partial Class Menu
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(63, 130)
+        Me.Button1.Location = New System.Drawing.Point(90, 186)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 44)
         Me.Button1.TabIndex = 2
@@ -57,18 +59,39 @@ Partial Class Menu
         '
         'btnSum
         '
-        Me.btnSum.Location = New System.Drawing.Point(63, 180)
+        Me.btnSum.Location = New System.Drawing.Point(90, 236)
         Me.btnSum.Name = "btnSum"
         Me.btnSum.Size = New System.Drawing.Size(75, 42)
         Me.btnSum.TabIndex = 3
         Me.btnSum.Text = "Sum Numbers"
         Me.btnSum.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(84, 62)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(85, 31)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Menu"
+        '
+        'btnDistance
+        '
+        Me.btnDistance.Location = New System.Drawing.Point(90, 284)
+        Me.btnDistance.Name = "btnDistance"
+        Me.btnDistance.Size = New System.Drawing.Size(75, 39)
+        Me.btnDistance.TabIndex = 5
+        Me.btnDistance.Text = "Distance Calculator"
+        Me.btnDistance.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(284, 410)
+        Me.Controls.Add(Me.btnDistance)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSum)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRockPaperScissors)
@@ -76,10 +99,13 @@ Partial Class Menu
         Me.Name = "Menu"
         Me.Text = "Menu"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnRace As System.Windows.Forms.Button
     Friend WithEvents btnRockPaperScissors As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnSum As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnDistance As System.Windows.Forms.Button
 End Class

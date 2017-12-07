@@ -23,43 +23,43 @@ Partial Class DistanceCalculator
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.listResults = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'listResults
         '
         Me.listResults.FormattingEnabled = True
-        Me.listResults.Location = New System.Drawing.Point(12, 12)
+        Me.listResults.Location = New System.Drawing.Point(12, 19)
         Me.listResults.Name = "listResults"
-        Me.listResults.Size = New System.Drawing.Size(260, 186)
+        Me.listResults.Size = New System.Drawing.Size(260, 225)
         Me.listResults.TabIndex = 0
         '
-        'Button1
+        'btnCalculate
         '
-        Me.Button1.Location = New System.Drawing.Point(32, 223)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Calculate"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCalculate.Location = New System.Drawing.Point(24, 250)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalculate.TabIndex = 1
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnExit
         '
-        Me.Button2.Location = New System.Drawing.Point(179, 222)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Exit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(177, 250)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 2
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'DistanceCalculator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(284, 306)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.listResults)
         Me.Name = "DistanceCalculator"
         Me.Text = "DistanceCalculator"
@@ -67,6 +67,6 @@ Partial Class DistanceCalculator
 
     End Sub
     Friend WithEvents listResults As System.Windows.Forms.ListBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnCalculate As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 End Class
