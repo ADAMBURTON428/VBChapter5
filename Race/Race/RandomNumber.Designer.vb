@@ -23,7 +23,6 @@ Partial Class RandomNumber
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnGuess = New System.Windows.Forms.Button()
-        Me.txtInput = New System.Windows.Forms.TextBox()
         Me.lblGuessWrong = New System.Windows.Forms.Label()
         Me.lblComputerGuess = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -37,27 +36,20 @@ Partial Class RandomNumber
         Me.btnGuess.Text = "Guess"
         Me.btnGuess.UseVisualStyleBackColor = True
         '
-        'txtInput
-        '
-        Me.txtInput.Location = New System.Drawing.Point(80, 111)
-        Me.txtInput.Name = "txtInput"
-        Me.txtInput.Size = New System.Drawing.Size(100, 20)
-        Me.txtInput.TabIndex = 1
-        '
         'lblGuessWrong
         '
         Me.lblGuessWrong.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblGuessWrong.Location = New System.Drawing.Point(172, 217)
+        Me.lblGuessWrong.Location = New System.Drawing.Point(65, 56)
         Me.lblGuessWrong.Name = "lblGuessWrong"
-        Me.lblGuessWrong.Size = New System.Drawing.Size(100, 23)
+        Me.lblGuessWrong.Size = New System.Drawing.Size(146, 23)
         Me.lblGuessWrong.TabIndex = 2
         '
         'lblComputerGuess
         '
         Me.lblComputerGuess.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblComputerGuess.Location = New System.Drawing.Point(185, 41)
+        Me.lblComputerGuess.Location = New System.Drawing.Point(43, 100)
         Me.lblComputerGuess.Name = "lblComputerGuess"
-        Me.lblComputerGuess.Size = New System.Drawing.Size(74, 27)
+        Me.lblComputerGuess.Size = New System.Drawing.Size(193, 27)
         Me.lblComputerGuess.TabIndex = 3
         '
         'RandomNumber
@@ -67,16 +59,13 @@ Partial Class RandomNumber
         Me.ClientSize = New System.Drawing.Size(284, 262)
         Me.Controls.Add(Me.lblComputerGuess)
         Me.Controls.Add(Me.lblGuessWrong)
-        Me.Controls.Add(Me.txtInput)
         Me.Controls.Add(Me.btnGuess)
         Me.Name = "RandomNumber"
         Me.Text = "RandomNumber"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnGuess As System.Windows.Forms.Button
-    Friend WithEvents txtInput As System.Windows.Forms.TextBox
     Friend WithEvents lblGuessWrong As System.Windows.Forms.Label
     Friend WithEvents lblComputerGuess As System.Windows.Forms.Label
 End Class

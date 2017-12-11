@@ -24,7 +24,6 @@ Partial Class Menu
     Private Sub InitializeComponent()
         Me.btnRace = New System.Windows.Forms.Button()
         Me.btnRockPaperScissors = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnSum = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnDistance = New System.Windows.Forms.Button()
@@ -49,18 +48,9 @@ Partial Class Menu
         Me.btnRockPaperScissors.Text = "Rock Paper Scissors"
         Me.btnRockPaperScissors.UseVisualStyleBackColor = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(90, 186)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 44)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Sum of Number"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'btnSum
         '
-        Me.btnSum.Location = New System.Drawing.Point(90, 236)
+        Me.btnSum.Location = New System.Drawing.Point(90, 186)
         Me.btnSum.Name = "btnSum"
         Me.btnSum.Size = New System.Drawing.Size(75, 42)
         Me.btnSum.TabIndex = 3
@@ -79,7 +69,7 @@ Partial Class Menu
         '
         'btnDistance
         '
-        Me.btnDistance.Location = New System.Drawing.Point(90, 284)
+        Me.btnDistance.Location = New System.Drawing.Point(90, 234)
         Me.btnDistance.Name = "btnDistance"
         Me.btnDistance.Size = New System.Drawing.Size(75, 39)
         Me.btnDistance.TabIndex = 5
@@ -88,7 +78,7 @@ Partial Class Menu
         '
         'btnRandom
         '
-        Me.btnRandom.Location = New System.Drawing.Point(90, 330)
+        Me.btnRandom.Location = New System.Drawing.Point(90, 279)
         Me.btnRandom.Name = "btnRandom"
         Me.btnRandom.Size = New System.Drawing.Size(75, 39)
         Me.btnRandom.TabIndex = 6
@@ -104,7 +94,6 @@ Partial Class Menu
         Me.Controls.Add(Me.btnDistance)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSum)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRockPaperScissors)
         Me.Controls.Add(Me.btnRace)
         Me.Name = "Menu"
@@ -115,7 +104,6 @@ Partial Class Menu
     End Sub
     Friend WithEvents btnRace As System.Windows.Forms.Button
     Friend WithEvents btnRockPaperScissors As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnSum As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnDistance As System.Windows.Forms.Button
